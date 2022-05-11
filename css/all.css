@@ -12028,6 +12028,10 @@ fieldset:disabled .btn {
   color: rgba(220, 53, 69, 0.8);
 }
 
+.nav-link:hover {
+  color: #dc3545;
+}
+
 .nav-link.active {
   background: rgba(220, 53, 69, 0.8) !important;
 }
