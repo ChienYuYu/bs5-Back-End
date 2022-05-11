@@ -12019,4 +12019,21 @@ fieldset:disabled .btn {
     margin-left: 0;
   }
 }
+
+.pagination .page-link {
+  color: rgba(220, 53, 69, 0.8);
+}
+
+.nav-link {
+  color: rgba(220, 53, 69, 0.8);
+}
+
+.nav-link.active {
+  background: rgba(220, 53, 69, 0.8) !important;
+}
+
+.list-group-item.active {
+  background: rgba(220, 53, 69, 0.7);
+  border: none;
+}
 /*# sourceMappingURL=all.css.map */

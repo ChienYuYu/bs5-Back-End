@@ -1,0 +1,16 @@
+.pagination .page-link{
+  color: rgba($danger, 0.8);
+}
+
+.nav-link{
+  color: rgba($danger, 0.8);
+}
+
+.nav-link.active{
+  background: rgba($danger, 0.8) !important;
+}
+
+.list-group-item.active{
+  background: rgba($danger, 0.7);
+  border: none;
+}

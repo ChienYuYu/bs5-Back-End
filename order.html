@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/all.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#list-group-item" data-bs-offset="150">
   <div class="d-flex">
     <aside class="sidebar vh-100  border-end  bg-white d-flex flex-column">
       <!-- 名稱 -->
@@ -37,9 +37,6 @@
             </a>
             <a href="order.html" class="sidebar-link">
               <div class="ps-5">單一訂單細節</div>
-            </a>
-            <a href="#" class="sidebar-link">
-              <div class="ps-5">其他項目三</div>
             </a>
           </div>
         </div>
@@ -85,7 +82,7 @@
     <main class="main">
       <div class="bg-white w-100 border-bottom sticky-top">
         <a href="#" class="py-3 px-4  d-inline-block border-end " id="sideMenu-btn">
-          <i class="bi bi-arrows-angle-expand"></i>
+          <i class="bi bi-arrows-angle-expand text-dark"></i>
         </a>
       </div>
       <!-- ------------------------------------ -->
@@ -93,21 +90,20 @@
       <div class="p-4">
         <div class="row">
           <div class="col-lg-3 mb-3 ">
-            <div class="list-group sticky-top " style="top:85px">
-              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                The current link item
+            <nav class="list-group sticky-top" style="top:82px" id="list-group-item">
+              <a href="#card-summary" class="list-group-item list-group-item-action active" aria-current="true">
+                摘要
               </a>
-              <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-              <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-              <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-              <a class="list-group-item list-group-item-action ">A disabled link item</a>
-            </div>
+              <a href="#card-item" class="list-group-item list-group-item-action">購買品項</a>
+              <a href="#card-invoice" class="list-group-item list-group-item-action">發票管理</a>
+              <a href="#card-danger" class="list-group-item list-group-item-action ">危險操作</a>
+            </nav>
           </div>
 
           <div class="col-lg-9">
             <!-- ----摘要------------------- -->
             <div class="card mb-4">
-              <div class="card-header">
+              <div class="card-header" id="card-summary">
                 摘要
               </div>
               <div class="card-body">
@@ -129,7 +125,7 @@
             </div>
             <!-- -購買品項------------------ -->
             <div class="card mb-4">
-              <div class="card-header">
+              <div class="card-header" id="card-item">
                 購買品項
               </div>
               <div class="card-body p-0">
@@ -214,7 +210,7 @@
             </div>
             <!-- -發票管理------------------ -->
             <div class="card mb-4">
-              <div class="card-header">
+              <div class="card-header" id="card-invoice">
                 發票管理
               </div>
               <div class="card-body">
@@ -250,7 +246,7 @@
             </div>
             <!-- -危險操作------------------ -->
             <div class="card mb-4">
-              <div class="card-header">
+              <div class="card-header" id="card-danger">
                 危險操作
               </div>
               <div class="card-body">
@@ -277,6 +273,7 @@
               </div>
             </div>
             <!-- --------------------------- -->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
           </div>
         </div>
